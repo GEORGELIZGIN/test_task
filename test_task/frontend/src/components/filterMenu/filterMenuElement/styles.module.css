@@ -1,0 +1,22 @@
+.Activated {
+
+        background-color: #2196F3;
+        color: white;
+        padding: 16px;
+        font-size: 16px;
+        border: none;
+        outline: none;
+
+    background-color: black;
+}
+.NotActivated {
+
+        background-color: #2196F3;
+        color: white;
+        padding: 16px;
+        font-size: 16px;
+        border: none;
+        outline: none;
+
+    background-color: blue;
+}
