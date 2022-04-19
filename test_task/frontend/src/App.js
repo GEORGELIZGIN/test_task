@@ -36,7 +36,7 @@ function App() {
       <Table rows={table}/>
       <Pagination
         count={tableCount}
-        limit={1}
+        limit={3}
         page={page}
         onPageChange={page => setPage(page)}
       />

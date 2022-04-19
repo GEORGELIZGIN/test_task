@@ -13,6 +13,10 @@ class TableFilter(django_filters.FilterSet):
     distance__gt = django_filters.NumberFilter(field_name='distance', lookup_expr='gt')
     distance__lt = django_filters.NumberFilter(field_name='distance', lookup_expr='lt')
 
+    date = django_filters.DateTimeFilter()
+    date__gt = django_filters.DateTimeFilter(field_name='date', lookup_expr='gt')
+    date__lt = django_filters.DateTimeFilter(field_name='date', lookup_expr='lt')
+
     class Meta:
         model = Table
-        fields = ('name', 'quantity', 'distance')
+        fields = ('name', 'quantity', 'distance', 'date')

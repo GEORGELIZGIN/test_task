@@ -4,7 +4,7 @@ import arrowLeft from './arrow-left.png'
 import arrowRight from './arrow-right.png'
 import { useState, useEffect } from 'react'
 
-const Pagination = ({ count = 0, limit = 1, initialActive = 1, onPageChange, page }) => {
+const Pagination = ({ count = 0, limit = 3, initialActive = 1, onPageChange, page }) => {
   const [ active, setActive ] = useState(initialActive)
   const onButtonClick = (active) => {
     setActive(active)

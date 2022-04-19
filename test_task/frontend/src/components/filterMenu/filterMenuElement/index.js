@@ -11,6 +11,7 @@ const FilterMenuElement = ({name, selectField}) => {
         'Меньше': '__lt',
         'Равно': '',
         'Содержит': '',
+        'Дата': 'date',
     }
     const [isSelected, setIsSelected] = useState(false)
     const foo = () => {
@@ -19,7 +20,7 @@ const FilterMenuElement = ({name, selectField}) => {
         selectField(namestovalues[name])
         console.log(name)
     }
-    return <button onClick={foo} className={isSelected ?  styles.Acivated : styles.NotActivated }>{name}</button>
+    return <button onClick={foo} className={isSelected ?  styles.Activated  : styles.NotActivated}>{name}</button>
 }
 
 export default FilterMenuElement
